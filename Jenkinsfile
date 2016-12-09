@@ -1,10 +1,10 @@
 node{
    
-   ws("workspace/${env.JOB_NAME}/${env.BRANCH_NAME}".replace('%2F', '_')) {
+ //  ws("workspace/${env.JOB_NAME}/${env.BRANCH_NAME}".replace('%2F', '_')) {
    def mvnHome
    // for display purposes
       // Get some code from a GitHub repository
-   checkout https://github.com/chandrayarramreddy/PilotProject.git
+    git url: 'https://github.com/chandrayarramreddy/PilotProject.git'
           
       // Get the Maven tool.
       // ** NOTE: This 'M3' Maven tool must be configured
@@ -18,7 +18,7 @@ node{
      // } else {
          bat(/"${mvnHome}\bin\mvn" clean package/)
       //}
-   }
+//   }
    
    }
 }
