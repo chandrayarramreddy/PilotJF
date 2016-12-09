@@ -4,8 +4,8 @@ node{
    def mvnHome
    // for display purposes
       // Get some code from a GitHub repository
-      https://github.com/chandrayarramreddy/PilotProject.git
-         checkout 
+   checkout https://github.com/chandrayarramreddy/PilotProject.git
+          
       // Get the Maven tool.
       // ** NOTE: This 'M3' Maven tool must be configured
       // **       in the global configuration.           
