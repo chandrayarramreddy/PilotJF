@@ -1,4 +1,6 @@
 node{
+   
+   ws("workspace/${env.JOB_NAME}/${env.BRANCH_NAME}".replace('%2F', '_')) {
    def mvnHome
    stage('Preparation') { // for display purposes
       // Get some code from a GitHub repository
@@ -17,5 +19,5 @@ node{
       //}
    }
    
-  
+   }
 }
