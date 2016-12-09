@@ -5,6 +5,7 @@ node{
    // for display purposes
       // Get some code from a GitHub repository
       https://github.com/chandrayarramreddy/PilotProject.git
+         checkout 
       // Get the Maven tool.
       // ** NOTE: This 'M3' Maven tool must be configured
       // **       in the global configuration.           
